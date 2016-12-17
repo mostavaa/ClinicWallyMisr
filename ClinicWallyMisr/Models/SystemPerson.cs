@@ -161,16 +161,11 @@ namespace ClinicWallyMisr
         }
         public SystemPerson add(SystemPerson acc)
         {
-            try
-            {
+            
                 _context.SystemPersons.Add(acc);
                 _context.SaveChanges();
                 Logger.Log(acc.name + " is Added", LogType.Info);
-            }
-            catch (Exception e)
-            {
-                Logger.Log(e.ToString(), LogType.Error);
-            }
+           
             return acc;
         }
         public SystemPerson delete(SystemPerson acc)

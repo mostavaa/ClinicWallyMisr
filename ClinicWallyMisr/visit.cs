@@ -52,7 +52,7 @@ namespace ClinicWallyMisr
         public virtual ICollection<Imaging> Imagings { get; set; }
         public virtual ICollection<Laboratory> Laboratories { get; set; }
         public virtual patient patient { get; set; }
-        public virtual SystemPerson SystemPerson { get; set; }
         public virtual ICollection<prescription> prescriptions { get; set; }
+        public virtual SystemPerson SystemPerson { get; set; }
     }
 }
